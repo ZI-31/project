@@ -75,7 +75,7 @@ else{
     mysql_query("INSERT INTO complaint (c_date, fio, object, org_name, text, solution)
                 VALUES('$c_date', '$fio', '$obj_id', '$org_id', '$text', '$solution') ")or die(mysql_error());
 
-        echo "Жалоба занесена!";
+        echo "Жалоба занесена в базу данных!";
     }
 }
 
